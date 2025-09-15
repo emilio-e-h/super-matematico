@@ -4,6 +4,23 @@ window.addEventListener('load', () => {
     window.firebaseInit();
 });
 
+// COPIA Y PEGA AQUÍ TU OBJETO firebaseConfig DE TU PROYECTO.
+// EJEMPLO: const firebaseConfig = { ... };
+const firebaseConfig = {
+    // Pegar tu configuración aquí
+  apiKey: "AIzaSyDL7VQsqu0ESib7wt-XZr82sPUf8nwJ2Hc",
+  authDomain: "supermercado-app-169e8.firebaseapp.com",
+  projectId: "supermercado-app-169e8",
+  storageBucket: "supermercado-app-169e8.firebasestorage.app",
+  messagingSenderId: "536220422321",
+  appId: "1:536220422321:web:39eb290be34250ed095290",
+  measurementId: "G-X0FJ1ST7P9"
+};
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
 const products = [
     { name: "Manzanas", price: 2.50 },
     { name: "Plátanos", price: 1.80 },
